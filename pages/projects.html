@@ -14,49 +14,111 @@
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header container -->
-    <header class="header">
 
-        <!-- Logo -->
-        <svg class="logo">
-            <use class="logo__img" href="images/index/Logo.svg#logo"></use>
-        </svg>
+    <!-- Grid container: Page Wrap -->
+    <div class="wrapper">
+        <!-- Header container: Wrapper element 1 -->
+        <header class="wrapper__header">
 
-        <!-- Navbar -->
-        <nav class="header-nav">
-            <ul class="header-nav__list">
-                <li class="header-nav__link"><a href="#projects" title="projects">Projects</a></li>
-                <li class="header-nav__link"><a href="#contact" title="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            <!-- Logo -->
+            <svg class="logo">
+                <use class="logo__img" href="images/index/Logo.svg#logo"></use>
+            </svg>
 
-    <main></main>
+            <!-- Navbar -->
+            <nav class="header-nav txt txt--mid">
+                <ul class="header-nav__list">
+                    <li class="header-nav__link"><a href="#projects" title="projects"><strong>Projects</strong></a></li>
+                    <li class="header-nav__link"><a href="#contact" title="contact"><strong>Contact</strong></a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <!-- Logo -->
-        <svg class="logo">
-            <use class="logo__img" href="images/index/Logo.svg#logo"></use>
-        </svg>
+        <!-- Main container -->
+        <main>
 
-        <!-- Navbar -->
-        <nav class="footer-nav">
-            <ul class="footer-nav__list">
-                <li class="footer-nav__link"><a href="#projects" title="projects">Projects</a></li>
-                <li class="footer-nav__link"><a href="#contact" title="contact">Contact</a></li>
-                <li class="footer-nav__link"><a href="#" title="shape">
-                    <i class=""></i>
-                </a></li>
-                <li class="footer-nav__link"><a href="" title="ig">
-                    <i class=""></i>
-                </a></li>
-                <li class="footer-nav__link"><a href="" title="twitter">
-                    <i class=""></i>
-                </a></li>
-            </ul>
-        </nav>
-    </footer>
+            <!-- Wrapper element 2  -->
+            <section class="wrapper__element2">
+                <!-- Block container: H1 & text -->
+                <article class="block-one">
+                    <h1 class="h1 block-one block-one--title">A fresh new title can make all the difference!</h1>
+                    <p class="txt block-one block-one--txt">
+                        There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered alteration in some form, by injected humour, or randomised words 
+                        which don't look even slightly believable.</p>
+                    <p class="block-one block-one--txt txt txt--small txt--light">
+                        You need to be sure there isn't anything embarrassing hidden in the middle of text. All
+                        the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as 
+                        necessary, making this the first true generator on the Internet. It uses a dictionary of 
+                        over 200 Latin words, combined with a handful of model sentence structures.
+                    </p>
+                </article>
+            </section>
 
+            <!-- Wrapper element 3 -->
+             <section class="wrapper__element 3">
+                <!-- Grid container: Details -->
+                <article class="block-two txt txt--mid txt--bold">
+                    <p class="block-two__item1 txt txt--light">Project</p>
+                    <p class="block-two__item2">Genenis Portfolio</p>
+                    <p class="block-two__item3 txt txt--light">Design</p>
+                    <p class="block-two__item4">Bakhtiyar Sattarov</p>
+                    <p class="block-two__item5 txt txt--light">Client</p>
+                    <p class="block-two__item6">Crarftwork</p>
+                    <p class="block-two__item7 txt txt--light">Deliverable</p>
+                    <p class="block-two__item8">Website Design</p>
+                    <p class="block-two__item9 txt txt--light">Year</p>
+                    <time class="block-two__item10">2018</time>
+                    <p class="block-two__item10">Field</p>
+                    <p class="block-two__item10">Branding, Personal</p>
+                </article>
+             </section>
+
+             <!-- Block container: Main image & txt -->
+             <section class="wrapper__element4">
+                <div class="block-three">
+                    <img class="block-three__img" src="images/projects/projects-1" alt="">             
+                    <p class="block-three txt txt--small"></p>
+                </div>
+              </section>
+
+              <!-- Block container: images -->
+               <section class="wrapper__element5">
+                <div class="block-four">
+                    <img class="block-four__element1" src="images/projects/projects-2" alt="">
+                    <img class="block-four__element2" src="images/projects/project-3" alt="">
+                    <img class="block-four__element3" src="images/projects/projects-4" alt="">
+                </div>
+               </section>
+
+        </main>
+
+        <!-- Footer container: Wrapper element 6 -->
+        <footer class="footer">
+
+            <!-- Logo -->
+            <svg class="logo">
+                <use class="logo__img" href="images/index/Logo.svg#logo"></use>
+            </svg>
+
+            <!-- Navbar -->
+            <nav class="footer-nav txt txt--mid">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__link"><a href="#projects" title="projects"><strong>Projects</strong></a></li>
+                    <li class="footer-nav__link"><a href="#contact" title="contact"><strong>Contact</strong></a></li>
+                    <li class="footer-nav__link"><a href="#" title="shape">
+                        <i class=""></i>
+                    </a></li>
+                    <li class="footer-nav__link"><a href="" title="ig">
+                        <i class=""></i>
+                    </a></li>
+                    <li class="footer-nav__link"><a href="" title="twitter">
+                        <i class=""></i>
+                    </a></li>
+                </ul>
+            </nav>
+
+        </footer>
+    </div>
 </body>
 </html>

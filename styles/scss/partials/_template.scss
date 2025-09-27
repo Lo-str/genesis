@@ -1,0 +1,69 @@
+// Nesting
+nav {
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+// Variables
+$primary-color: #4a90e2;
+$font-stack: "Poppins", sans-serif;
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+}
+
+// Partials + @use
+// main.scss
+@use "variables";
+@use "header";
+@use "footer";
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  @include flex-center;
+}
+
+// Extend / Inheritance
+.message {
+  padding: 1rem;
+  border: 1px solid;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+// Operators
+.container {
+  width: 100% - 20px;
+  padding: 10px * 2;
+}
+
+// Structure and workflow
+/scss
+  _variables.scss
+  _mixins.scss
+  _header.scss
+  _footer.scss
+  main.scss
+/css
+  main.css   (compiled output)

@@ -1,3 +1,5 @@
-.logo {
-  
+@use "./mixins" as m;
+
+.wrapper__header {
+  @include m.flex-between;
 }

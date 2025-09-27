@@ -1,14 +1,8 @@
-@use "partials/home-wrap";
-@use "partials/header";
+@use "../partials/variables" as vars;
+@use "../partials/mixins" as m;
+@use "../partials/home-wrap";
+@use "../partials/header";
 
-$background: red;
-$font-primary: "Mulish", sans-serif;
-$fs-base: 16px;
-$fs-medium: 18px;
-$fs-large: 22px;
-$overlay-60: rgba(0, 0, 0, 0.6);
-$text: #111111;
-$fw-bold: 700;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -17,5 +11,9 @@ $fw-bold: 700;
 }
 
 body {
-  background-color: $background;
+  background: vars.$background;
+  font-family: vars.$font-primary;
+  margin: 0;
+  padding: 0;
 }
+

@@ -1,0 +1,37 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: 0.6fr 2.6fr 6.7fr 3.8fr 52.5fr 2.4fr 2.8fr 2.7fr 22fr 3fr 0.6fr;
+  grid-template-columns: 1fr;
+  align-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.wrapper header {
+  grid-area: 1/1/2/2;
+}
+.wrapper element2 {
+  grid-area: 3/1/4/2;
+}
+.wrapper element3 {
+  grid-area: 5/1/6/2;
+}
+.wrapper element4 {
+  grid-area: 7/1/8/2;
+}
+.wrapper element5 {
+  grid-area: 9/1/10/2;
+}
+.wrapper footer {
+  grid-area: 11/1/12/2;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: "Mulish", sans-serif;
+}

@@ -6,10 +6,10 @@
   align-content: center;
   width: 100%;
   min-height: 100vh;
-    > &__header { grid-area: 1 / 1 / 2 / 2;}
-    > &__element2 { grid-area: 3 / 1 / 4 / 2; }
-    > &__element3 { grid-area: 5 / 1 / 6 / 2; }
-    > &__element4 { grid-area: 7 / 1 / 8 / 2; }
-    > &__element5 { grid-area: 9 / 1 / 10 / 2; }
-    > &__footer { grid-area: 11 / 1 / 12 / 2; }
+    header { grid-area: 1 / 1 / 2 / 2; }
+    element2 { grid-area: 3 / 1 / 4 / 2; }
+    element3 { grid-area: 5 / 1 / 6 / 2; }
+    element4 { grid-area: 7 / 1 / 8 / 2; }
+    element5 { grid-area: 9 / 1 / 10 / 2; }
+    footer { grid-area: 11 / 1 / 12 / 2; }
 }

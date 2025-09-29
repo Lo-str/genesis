@@ -1,0 +1,53 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+
+
+.block-one {
+  @include m.justify-start;
+  max-width: 1110px;
+  width: 100%;
+  height: auto;
+    &__a {
+      max-width: 635px;
+      width: 100%;
+      font-weight: v.$fw-bold;
+
+      &--txt {
+        margin-bottom: v.$space-4;
+        font-size: v.$fs-large;
+  }
+      &--blue {
+        color: v.$text-secondary;
+      }
+      &--title {
+        line-height: v.$space-6;
+        font-size: v.$fs-xl
+      }
+}
+
+  &__b {
+    @include m.justify-end;
+    padding-bottom: v.$space-2;
+    max-width: 402px;
+    width: 100%;
+    height: auto;
+    color: v.$overlay-60;
+
+    &--items {
+      max-width: 212px;
+      width: 100%;
+      height: 34px;
+    }
+
+    &--line {
+      margin-bottom: v.$space-2;
+      width: 30px;
+      height: 1px;
+      border: 1px solid v.$overlay-60;
+    }
+
+    &--quote {
+      font-size: v.$fs-medium;
+    }
+  }
+}

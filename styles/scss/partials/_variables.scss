@@ -1,11 +1,24 @@
 // Colors
 $background: #FFFFFF;
-$text: #111111;
+$text-primary: #111111;
+$text-secondary: #4A4FF2;
+$text-tertiary: #979797;
 
 // Fonts
 $font-primary: "Mulish", sans-serif;
 $fs-base: 16px;
 $fs-medium: 18px;
 $fs-large: 22px;
+$fs-h2: 28px;
+$fs-xl: 40px;
 $overlay-60: rgba(0, 0, 0, 0.6);
 $fw-bold: 700;
+
+// Spacing
+$space-1: 0.25rem; // 4px
+$space-2: 0.5rem; // 8px
+$space-3: 1rem; // 16px
+$space-4: 1.5rem; // 24px
+$space-5: 2rem; // 32px
+$space-6: 4rem;
+$space-7: 0.75rem; // 12px

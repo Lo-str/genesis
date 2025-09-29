@@ -1,0 +1,47 @@
+@use "../partials/variables" as v;
+@use "../partials/mixins" as m;
+
+.wrapper__footer {
+  @include m.justify-between;
+  max-width: 1110px;
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 90px;
+  height: 19px;
+}
+
+.footer-nav {
+  max-width: 353px;
+  width: 100%;
+  height: auto;
+  @include m.justify-between;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: v.$text-primary;
+    }
+  }
+
+  &__icon {
+    width: 95px;
+    height: 15px;
+    display: flex;
+    gap: v.$space-4;
+    
+    i {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

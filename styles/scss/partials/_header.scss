@@ -1,5 +1,31 @@
 @use "./mixins" as m;
+@use "./variables" as vars;
 
 .wrapper__header {
-  @include m.flex-between;
+  @include m.justify-between;
+  max-width: 1110px;
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 90px;
+  height: 19px;
+}
+
+.header-nav {
+    &__list {
+      display: flex;
+      gap: 20px;
+
+    }
+
+    &__link {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: vars.$text-primary;
+      }
+    }
 }

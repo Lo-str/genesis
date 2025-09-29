@@ -1,0 +1,105 @@
+@use "../partials/variables" as v;
+@use "../partials/mixins" as m;
+
+.block-four {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: start;
+  gap: 50px;
+  padding: v.$space-4 0;
+
+  &__line {
+    grid-column: 1 / -1; 
+    border: 1px solid v.$text-tertiary;
+  }
+
+  &__item1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  &__item2 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  &__item3 {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+
+  &__item4 {
+    text-align: right;
+    grid-area: 1 / 5 / 2 / 6;
+  }
+
+  &__item5 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  &__item6 {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+
+  &__item7 {
+    text-align: right;
+    grid-area: 2 / 5 / 3 / 6;
+  }
+
+  &__item8 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  &__item9 {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+
+  &__item10 {
+    grid-area: 3 / 4 / 4 / 5;
+  }
+
+  &__item11 {
+    text-align: right;
+    grid-area: 3 / 5 / 4 / 6;
+  }
+
+  &__item12 {
+    grid-area: 4 / 3 / 5 / 4;
+  }
+
+  &__item13 {
+    grid-area: 4 / 4 / 5 / 5;
+  }
+
+  &__item14 {
+    text-align: right;
+    grid-area: 4 / 5 / 5 / 6;
+  }
+
+  &__item1,
+  &__item8 {
+    font-size: v.$fs-large;
+    font-weight: v.$fw-bold;
+  }
+
+  &__item2,
+  &__item5,
+  &__item9,
+  &__item12 {
+    font-size: v.$fs-medium;
+    font-weight: v.$fw-bold;
+  }
+
+  &__item3,
+  &__item6,
+  &__item10,
+  &__item13 {
+    font-size: v.$fs-base;
+
+    &--a {
+      padding-bottom: v.$space-7;
+    }
+
+    &--b {
+      color: v.$overlay-60;
+    }
+  }
+}

@@ -1,34 +1,73 @@
 .wrapper {
-  display: grid;
-  grid-template-rows: 0.6fr 2.6fr 6.7fr 3.8fr 52.5fr 2.4fr 2.8fr 2.7fr 22fr 3fr 0.6fr;
-  grid-template-columns: 1fr;
-  align-content: center;
+  border: 2px solid red;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  max-width: 1110px;
   width: 100%;
   min-height: 100vh;
-}
-.wrapper header {
-  grid-area: 1/1/2/2;
-}
-.wrapper element2 {
-  grid-area: 3/1/4/2;
-}
-.wrapper element3 {
-  grid-area: 5/1/6/2;
-}
-.wrapper element4 {
-  grid-area: 7/1/8/2;
-}
-.wrapper element5 {
-  grid-area: 9/1/10/2;
-}
-.wrapper footer {
-  grid-area: 11/1/12/2;
 }
 
 .wrapper__header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 1110px;
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 90px;
+  height: 19px;
+}
+
+.header-nav {
+  border: 2px solid blue;
+}
+.header-nav__list {
+  display: flex;
+  gap: 20px;
+}
+.header-nav__link {
+  list-style: none;
+}
+.header-nav__link a {
+  text-decoration: none;
+  color: #111111;
+}
+
+.wrapper__block-one {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 1110px;
+  width: 100%;
+  height: auto;
+}
+
+.block-one__a {
+  border: 2px solid rgb(0, 255, 64);
+  max-width: 635px;
+  width: 100%;
+  height: auto;
+  font-weight: 700;
+}
+.block-one__a--txt {
+  font-size: 22px;
+}
+.block-one__a--blue {
+  color: #4A4FF2;
+}
+.block-one__b {
+  border: 2px solid rgb(0, 255, 64);
+}
+.block-one__b--line {
+  width: 30px;
+  border-top: 2px solid inherit;
 }
 
 *, *::before, *::after {
@@ -40,6 +79,8 @@
 body {
   background: #FFFFFF;
   font-family: "Mulish", sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/partials/_home-wrap.scss%22,%22../scss/partials/_mixins.scss%22,%22../scss/partials/_header.scss%22,%22../scss/partials/_variables.scss%22,%22../scss/partials/_block-one.scss%22,%22../scss/pages/index.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAGA;EACE;EACA;ECSA;EACA;EACA;EACA;EDVA;EACA;EACA;;;AENF;EDKE;EACA;EACA;ECLA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;AACE;EACE;EACA;;AAIF;EACE;;AAEA;EACE;EACA,OC1BO;;;ACCf;EACE;EHFA;EACA;EACA;EGEA;EACA;EACA;;;AAIE;EACE;EACA;EACA;EACA;EACA,aDNI;;ACQJ;EACE,WDXG;;ACaL;EACE,ODpBS;;ACwBf;EACE;;AACA;EACE;EACA;;;ACxBN;EACE;EACA;EACA;;;AAGF;EACE,YFbW;EEcX,aFTa;EEUb;EACA%22,%22file%22:%22index.css%22%7D */

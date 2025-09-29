@@ -1,5 +1,50 @@
-@mixin flex-between {
+@use "../partials/variables" as v;
+
+// Flexboxes
+@mixin flex-b1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin justify-between {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+@mixin flex-base {
+  display: flex;
+  align-items: flex-end;
+}
+
+@mixin flex-col($align) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+}
+
+@mixin justify-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@mixin justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+// Text
+@mixin h2 {
+  font-size: v.$fs-h2;
+  font-weight: v.$fw-bold;
+  line-height: 38px;
+}
+
+@mixin links {
+  text-decoration: none;
+  color: v.$overlay-60;
+  font-size: v.$fs-medium;
+  margin-bottom: v.$space-2;
 }

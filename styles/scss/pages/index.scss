@@ -1,19 +1,24 @@
-@use "../partials/variables" as vars;
+@use "../partials/variables" as v;
 @use "../partials/mixins" as m;
-@use "../partials/home-wrap";
+@use "../partials/wraps";
 @use "../partials/header";
+@use "../partials/block-one";
+@use "../partials/block-two";
+@use "../partials/block-three";
+@use "../partials/block-four";
+@use "../partials/footer";
 
 
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+
 }
 
 body {
-  background: vars.$background;
-  font-family: vars.$font-primary;
-  margin: 0;
-  padding: 0;
+  background: v.$background;
+  font-family: v.$font-primary;
+  margin: 0 auto;
+  padding: v.$space-4;
 }
 

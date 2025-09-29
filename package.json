@@ -1,0 +1,26 @@
+{
+  "name": "genesis",
+  "version": "1.0.0",
+  "description": "=)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass styles/scss:styles/css --watch --poll --embed-source-map --style=expanded",
+    "build": "sass styles/scss:styles/css --no-source-map --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lo-str/genesis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Lo-str/genesis/issues"
+  },
+  "homepage": "https://github.com/Lo-str/genesis#readme",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+
+}

@@ -1,0 +1,13 @@
+@use "variables" as v;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: v.$background;
+  font-family: v.$font-primary;
+  margin: 0 auto;
+  padding: v.$space-4;
+}

@@ -1,6 +1,13 @@
-@use "../partials/variables" as v;
+@use "variables" as v;
 
 // Flexboxes
+@mixin flex-container($x-layout, $y-layout, $gap) {
+  display: flex;
+  justify-content: $x-layout;
+  align-items: $y-layout;
+  gap: $gap;
+}
+
 @mixin flex-b1 {
   display: flex;
   justify-content: center;

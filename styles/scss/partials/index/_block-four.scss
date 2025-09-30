@@ -1,5 +1,5 @@
-@use "../partials/variables" as v;
-@use "../partials/mixins" as m;
+@use "../partials/utils/variables" as v;
+@use "../partials/utils/mixins" as m;
 
 .block-four {
   display: grid;
@@ -10,7 +10,7 @@
   padding: v.$space-4 0;
 
   &__line {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     border: 1px solid v.$text-tertiary;
   }
 

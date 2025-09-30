@@ -1,20 +1,16 @@
 @use "./mixins" as m;
-@use "../partials/variables" as v;
+@use "./variables" as v;
 
 // Page wrapper
 .wrapper {
   margin: 0 auto;
   padding: v.$space-4;
   @include m.flex-col(center);
+  flex-wrap: wrap;
   max-width: 1110px;
   width: 100%;
   min-height: 100vh;
   gap: 100px;
-
-  &__main {
-    @include m.flex-col(center);
-    gap: 100px;
-  }
 
   &__footer {
       @include m.justify-between;
@@ -23,4 +19,3 @@
       height: auto;
     }
 }
-

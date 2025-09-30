@@ -6,116 +6,138 @@
     <title>Genesis - Projects Details</title>
 
     <!-- Normalize and stylesheet links -->
-    <link rel="stylesheet" href="styles/normalize-code.css">
-    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="../styles/css/pages/normalize.css">
+    <link rel="stylesheet" href="../styles/css/pages/projects.css">
     <!-- Font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
-<body>
 
-    <!-- Grid container: Page Wrap -->
+<body>
+    <!-- Page Wrap -->
     <div class="wrapper">
-        <!-- Header container: Wrapper element 1 -->
+        <!-- Header container -->
         <header class="wrapper__header">
 
             <!-- Logo -->
-            <svg class="logo">
-                <use class="logo__img" href="images/index/Logo.svg#logo"></use>
-            </svg>
+            <div class="logo">
+                <img class="logo__img" src="../images/index/Logo.png" alt="">
+            </div>
 
             <!-- Navbar -->
-            <nav class="header-nav txt txt--mid">
+            <nav class="header-nav txt">
                 <ul class="header-nav__list">
-                    <li class="header-nav__link"><a href="#projects" title="projects"><strong>Projects</strong></a></li>
-                    <li class="header-nav__link"><a href="#contact" title="contact"><strong>Contact</strong></a></li>
+                    <li class="header-nav__link"><a href="../pages/projects.html" title="projects"><strong>Projects</strong></a></li>
+                    <li class="header-nav__link"><a href="../pages/contact.html" title="contact"><strong>Contact</strong></a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- Main container -->
-        <main>
+        <main class="main-pjct">
 
             <!-- Wrapper element 2  -->
-            <section class="wrapper__element2">
+            <section class="main-pjct__item1">
                 <!-- Block container: H1 & text -->
-                <article class="block-one">
-                    <h1 class="h1 block-one block-one--title">A fresh new title can make all the difference!</h1>
-                    <p class="txt block-one block-one--txt">
+                <article class="block-pjct1">
+                    <h1 class="block-pjct1__title">A fresh new title can<br>make all the difference!</h1>
+                    <p class="block-pjct1__txt">
                         There are many variations of passages of Lorem Ipsum available, but the majority
-                        have suffered alteration in some form, by injected humour, or randomised words 
+                        have suffered alteration in some form, by injected humour, or randomised words
                         which don't look even slightly believable.</p>
-                    <p class="block-one block-one--txt txt txt--small txt--light">
+                    <p class="block-pjct1__txt">
                         You need to be sure there isn't anything embarrassing hidden in the middle of text. All
-                        the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as 
-                        necessary, making this the first true generator on the Internet. It uses a dictionary of 
+                        the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                        necessary, making this the first true generator on the Internet. It uses a dictionary of
                         over 200 Latin words, combined with a handful of model sentence structures.
                     </p>
                 </article>
             </section>
 
             <!-- Wrapper element 3 -->
-             <section class="wrapper__element 3">
+            <section class="main-pjct__item2">
                 <!-- Grid container: Details -->
-                <article class="block-two txt txt--mid txt--bold">
-                    <p class="block-two__item1 txt txt--light">Project</p>
-                    <p class="block-two__item2">Genenis Portfolio</p>
-                    <p class="block-two__item3 txt txt--light">Design</p>
-                    <p class="block-two__item4">Bakhtiyar Sattarov</p>
-                    <p class="block-two__item5 txt txt--light">Client</p>
-                    <p class="block-two__item6">Crarftwork</p>
-                    <p class="block-two__item7 txt txt--light">Deliverable</p>
-                    <p class="block-two__item8">Website Design</p>
-                    <p class="block-two__item9 txt txt--light">Year</p>
-                    <time class="block-two__item10">2018</time>
-                    <p class="block-two__item10">Field</p>
-                    <p class="block-two__item10">Branding, Personal</p>
+                <article class="block-pjct2">
+                    <p class="block-pjct2__item1">Project</p>
+                    <p class="block-pjct2__item2">Genenis Portfolio</p>
+                    <p class="block-pjct2__item3">Design</p>
+                    <p class="block-pjct2__item4">Bakhtiyar Sattarov</p>
+                    <p class="block-pjct2__item5">Client</p>
+                    <p class="block-pjct2__item6">Crarftwork</p>
+                    <p class="block-pjct2__item7">Deliverable</p>
+                    <p class="block-pjct2__item8">Website Design</p>
+                    <p class="block-pjct2__item9">Year</p>
+                    <time class="block-pjct2__item10">2018</time>
+                    <p class="block-pjct2__item11">Field</p>
+                    <p class="block-pjct2__item12">Branding, Personal</p>
                 </article>
-             </section>
+            </section>
 
              <!-- Block container: Main image & txt -->
-             <section class="wrapper__element4">
-                <div class="block-three">
-                    <img class="block-three__img" src="images/projects/projects-1" alt="">             
-                    <p class="block-three txt txt--small"></p>
-                </div>
-              </section>
+            <section class="main-pjct__img1">
+                <img class="block-pjct3" src="../images/projects/projects-1.png" alt="">
+            </section>
+
+              <!-- Paragraph -->
+            <div class="main-pjct__item3">
+                <p class="block-pjct3">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+                    by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of
+                    Lorem Ipsum, You need to be sure there isn't anything embarrassing hidden in the middle of text. You need to be sure
+                    there isn't anything embarrassing hidden in the middle of text.
+                </p>
+            </div>
 
               <!-- Block container: images -->
-               <section class="wrapper__element5">
-                <div class="block-four">
-                    <img class="block-four__element1" src="images/projects/projects-2" alt="">
-                    <img class="block-four__element2" src="images/projects/project-3" alt="">
-                    <img class="block-four__element3" src="images/projects/projects-4" alt="">
+               <section class="main-pjct__img2">
+                <div class="block-pjct4">
+                    <img class="block-four__element1" src="../images/projects/projects-2.png" alt="">
+                    <img class="block-four__element2" src="../images/projects/projects-3.png" alt="">
+                    <img class="block-four__element3" src="../images/projects/projects-4.png" alt="">
                 </div>
                </section>
 
         </main>
 
-        <!-- Footer container: Wrapper element 6 -->
-        <footer class="footer">
+        <!-- Footer -->
+        <footer class="wrapper__footer">
 
             <!-- Logo -->
-            <svg class="logo">
-                <use class="logo__img" href="images/index/Logo.svg#logo"></use>
-            </svg>
+            <div class="logo">
+                <img class="logo__img" src="../images/index/Logo.png" alt="">
+            </div>
 
             <!-- Navbar -->
-            <nav class="footer-nav txt txt--mid">
+            <nav class="footer-nav">
                 <ul class="footer-nav__list">
-                    <li class="footer-nav__link"><a href="#projects" title="projects"><strong>Projects</strong></a></li>
-                    <li class="footer-nav__link"><a href="#contact" title="contact"><strong>Contact</strong></a></li>
-                    <li class="footer-nav__link"><a href="#" title="shape">
-                        <i class=""></i>
-                    </a></li>
-                    <li class="footer-nav__link"><a href="" title="ig">
-                        <i class=""></i>
-                    </a></li>
-                    <li class="footer-nav__link"><a href="" title="twitter">
-                        <i class=""></i>
-                    </a></li>
+                    <li class="footer-nav__link">
+                        <a href="../pages/projects.html" title="projects"><strong>Projects</strong></a>
+                    </li>
+                    <li class="footer-nav__link">
+                        <a href="../pages/contact.html" title="contact"><strong>Contact</strong></a>
+                    </li>
                 </ul>
+                <div class="footer-nav__icon">
+                    <li class="footer-nav__link">
+                        <a href="#" title="dribble">
+                            <i class="fa-brands fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li class="footer-nav__link">
+                        <a href="#" title="ig">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="footer-nav__link">
+                        <a href="#" title="twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                </div>
             </nav>
 
         </footer>

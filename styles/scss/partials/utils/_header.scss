@@ -1,5 +1,5 @@
 @use "./mixins" as m;
-@use "./variables" as vars;
+@use "./variables" as v;
 
 .wrapper__header {
   @include m.justify-between;
@@ -25,7 +25,7 @@
 
       a {
         text-decoration: none;
-        color: vars.$text-primary;
+        color: v.$text-primary;
       }
     }
 }

@@ -1,0 +1,45 @@
+@use "../utils/mixins" as m;
+@use "../utils/variables" as v;
+
+// .main-cnt {
+//   @include m.flex-col(center);
+//   gap: 50px;
+// }
+
+.block-cnt1 {
+  border: 2px solid red;
+  max-width: 1110px;
+  width: 100%;
+  min-height: 312px;
+  border: 2px solid red;
+  @include m.justify-between;
+
+  &__a {
+    border: 2px solid red;
+    max-width: 475px;
+    width: 100%;
+    min-height: auto;
+  }
+
+  // &__title {}
+
+  // &__txt {}
+
+  &__b {
+    border: 2px solid red;
+    max-width: 475px;
+    width: 100%;
+    min-height: auto;
+  }
+
+  // &__form {}
+
+  // &__btn {}
+}
+
+.block-cnt2 img {
+  border: 2px solid red;
+  max-width: 1110px;
+  width: 100%;
+  min-height: 570px;
+}

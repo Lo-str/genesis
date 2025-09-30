@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "./variables" as v;
 
 // Flexboxes
 @mixin flex-container($x-layout, $y-layout, $gap) {

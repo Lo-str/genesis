@@ -1,5 +1,5 @@
-@use "../partials/utils/variables" as v;
-@use "../partials/utils/mixins" as m;
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
 
 .block-four {
   display: grid;

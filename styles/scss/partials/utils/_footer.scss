@@ -1,5 +1,5 @@
-@use "../partials/variables" as v;
-@use "../partials/mixins" as m;
+@use "./variables" as v;
+@use "./mixins" as m;
 
 .wrapper__footer {
   @include m.justify-between;
@@ -38,7 +38,7 @@
     height: 15px;
     display: flex;
     gap: v.$space-4;
-    
+
     i {
       width: 15px;
       height: 15px;

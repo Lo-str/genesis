@@ -1,0 +1,13 @@
+@use "../partials/utils/variables" as v;
+@use "../partials/utils/mixins"    as m;
+@use "../partials/utils/header";
+@use "../partials/utils/footer";
+@use "../partials/utils/body";
+@use "../partials/contact/contact-main";
+
+.wrapper {
+  border: 2px solid red;
+  max-width: 1110px;
+  width: 100%;
+  min-height: 100vh;
+}

@@ -24,8 +24,13 @@
       list-style: none;
 
       a {
+        @include m.transition;
         text-decoration: none;
         color: v.$text-primary;
+      }
+
+      &:hover {
+        @include m.hover;
       }
     }
 }

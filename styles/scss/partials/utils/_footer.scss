@@ -11,6 +11,13 @@
 .logo {
   width: 90px;
   height: 19px;
+  a {
+    @include m.transition;
+  }
+
+  &:hover {
+    @include m.hover;
+  }
 }
 
 .footer-nav {
@@ -30,6 +37,10 @@
     a {
       text-decoration: none;
       color: v.$text-primary;
+      @include m.transition;
+    }
+    &:hover {
+      @include m.hover;
     }
   }
 

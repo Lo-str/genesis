@@ -1,45 +1,50 @@
 @use "../utils/mixins" as m;
 @use "../utils/variables" as v;
 
-// .main-cnt {
-//   @include m.flex-col(center);
-//   gap: 50px;
-// }
-
-.block-cnt1 {
-  border: 2px solid red;
+// Main container
+.main-cnt {
+  @include m.flex-col(center);
+  gap: v.$space-9;
   max-width: 1110px;
   width: 100%;
-  min-height: 312px;
-  border: 2px solid red;
-  @include m.justify-between;
-
-  &__a {
-    border: 2px solid red;
-    max-width: 475px;
-    width: 100%;
-    min-height: auto;
-  }
-
-  // &__title {}
-
-  // &__txt {}
-
-  &__b {
-    border: 2px solid red;
-    max-width: 475px;
-    width: 100%;
-    min-height: auto;
-  }
-
-  // &__form {}
-
-  // &__btn {}
+  height: fit-content ;
+  gap: v.$space-6;
 }
 
-.block-cnt2 img {
-  border: 2px solid red;
-  max-width: 1110px;
+// Block One: Top page
+.block-cnt1 {
   width: 100%;
-  min-height: 570px;
+  min-height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &__a {
+    max-width: 475px;
+    width: 100%;
+    min-height: auto;
+  }
+
+  &__title {
+    font-size: v.$fs-xl;
+    line-height: v.$space-11;
+    font-weight: v.$fw-bold;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  &__txt {
+    max-width: 445px;
+    width: 100%;
+    min-height: 56px;
+    font-size: v.$fs-base;
+    line-height: v.$space-4;
+  }
+}
+
+// Map
+.block-cnt2 {
+  width: clamp(320px, 95vw, 1110px);
+  height: clamp(320px, 95vw, 570px);
 }

@@ -20,8 +20,13 @@
   list-style: none;
 }
 .header-nav__link a {
+  cursor: pointer;
+  transition: transform 0.2;
   text-decoration: none;
   color: #111111;
+}
+.header-nav__link:hover {
+  transform: scale(1.1);
 }
 
 .wrapper__footer {
@@ -36,6 +41,13 @@
 .logo {
   width: 90px;
   height: 19px;
+}
+.logo a {
+  cursor: pointer;
+  transition: transform 0.2;
+}
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .footer-nav {
@@ -56,6 +68,11 @@
 .footer-nav__link a {
   text-decoration: none;
   color: #111111;
+  cursor: pointer;
+  transition: transform 0.2;
+}
+.footer-nav__link:hover {
+  transform: scale(1.1);
 }
 .footer-nav__icon {
   width: 95px;
@@ -80,41 +97,121 @@ body {
   padding: 1.5rem;
 }
 
-.block-cnt1 {
-  border: 2px solid red;
-  max-width: 1110px;
-  width: 100%;
-  min-height: 312px;
-  border: 2px solid red;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.block-cnt1__a {
-  border: 2px solid red;
-  max-width: 475px;
-  width: 100%;
-  min-height: auto;
-}
-.block-cnt1__b {
-  border: 2px solid red;
-  max-width: 475px;
-  width: 100%;
-  min-height: auto;
-}
-
-.block-cnt2 img {
-  border: 2px solid red;
-  max-width: 1110px;
-  width: 100%;
-  min-height: 570px;
-}
-
 .wrapper {
-  border: 2px solid red;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   max-width: 1110px;
   width: 100%;
   min-height: 100vh;
+  gap: 100px;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../scss/partials/utils/_header.scss%22,%22../../scss/partials/utils/_mixins.scss%22,%22../../scss/partials/utils/_variables.scss%22,%22../../scss/partials/utils/_footer.scss%22,%22../../scss/partials/utils/_body.scss%22,%22../../scss/partials/contact/_contact-main.scss%22,%22../../scss/pages/contact.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAGA;ECcE;EACA;EACA;EDdA;EACA;EACA;;;AAGF;EACE;EACA;;;AAIE;EACE;EACA;;AAIF;EACE;;AAEA;EACE;EACA,OEzBO;;;ACCf;EFcE;EACA;EACA;EEdA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;EFDA;EACA;EACA;;AEEA;EACE;EACA;;AAGF;EACE;;AAEA;EACE;EACA,OD7BS;;ACiCb;EACE;EACA;EACA;EACA,KDjBM;;ACmBN;EACE;EACA;;;ACzCN;EACE;EACA;;;AAGF;EACE,YFPW;EEQX,aFFa;EEGb;EACA,SFWQ;;;AGdV;EACE;EACA;EACA;EACA;EACA;EJIA;EACA;EACA;;AIHA;EACE;EACA;EACA;EACA;;AAOF;EACE;EACA;EACA;EACA;;;AAQJ;EACE;EACA;EACA;EACA;;;ACpCF;EACE;EACA;EACA;EACA%22,%22file%22:%22contact.css%22%7D */
+.main-cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1110px;
+  width: 100%;
+  height: fit-content;
+  gap: 4rem;
+}
+
+.block-cnt1 {
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.block-cnt1__a {
+  max-width: 475px;
+  width: 100%;
+  min-height: auto;
+}
+.block-cnt1__title {
+  font-size: 40px;
+  line-height: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.block-cnt1__txt {
+  max-width: 445px;
+  width: 100%;
+  min-height: 56px;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.block-cnt2 {
+  width: clamp(320px, 95vw, 1110px);
+  height: clamp(320px, 95vw, 570px);
+}
+
+.block-cnt1__b {
+  max-width: 475px;
+  width: 100%;
+}
+.block-cnt1__b .form {
+  display: grid;
+  row-gap: 30px;
+}
+.block-cnt1__b .form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.75rem;
+}
+.block-cnt1__b .form__field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 700;
+  pointer-events: none;
+}
+.block-cnt1__b .form__field input,
+.block-cnt1__b .form__field textarea {
+  font: inherit;
+  color: #111111;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #D8D8D8;
+}
+.block-cnt1__b .form__field input:focus,
+.block-cnt1__b .form__field textarea:focus {
+  outline: none;
+  border-bottom-color: #4A4FF2;
+  border-bottom-width: 2px;
+}
+.block-cnt1__b .form__field input::placeholder,
+.block-cnt1__b .form__field textarea::placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+.block-cnt1__b .form__field textarea {
+  resize: vertical;
+}
+.block-cnt1__b .form__btn {
+  width: 125px;
+  height: 50px;
+  border: none;
+  border-radius: none;
+  background-color: #4A4FF2;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2;
+}
+.block-cnt1__b .form__btn:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../scss/partials/utils/_header.scss%22,%22../../scss/partials/utils/_mixins.scss%22,%22../../scss/partials/utils/_variables.scss%22,%22../../scss/partials/utils/_footer.scss%22,%22../../scss/partials/utils/_body.scss%22,%22../../scss/partials/utils/_wraps.scss%22,%22../../scss/partials/contact/_contact-main.scss%22,%22../../scss/partials/contact/contact-form.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAGA;ECcE;EACA;EACA;EDdA;EACA;EACA;;;AAGF;EACE;EACA;;;AAIE;EACE;EACA;;AAIF;EACE;;AAEA;ECmCJ;EACA;EDlCM;EACA,OE1BO;;AF6BT;ECkCJ;;;AE9DF;EFcE;EACA;EACA;EEdA;EACA;EACA;;;AAGF;EACE;EACA;;AACA;EF+CA;EACA;;AE5CA;EFgDA;;;AE3CF;EACE;EACA;EACA;EFRA;EACA;EACA;;AESA;EACE;EACA;;AAGF;EACE;;AAEA;EACE;EACA,ODpCS;ED0Db;EACA;;AEpBE;EFwBF;;AEnBA;EACE;EACA;EACA;EACA,KD1BM;;AC4BN;EACE;EACA;;;ACpDN;EACE;EACA;;;AAGF;EACE,YFPW;EEQX,aFEa;EEDb;EACA,SFaQ;;;AGpBV;EACE;EACA,SHkBQ;EDIR;EACA;EACA,aIvBoB;EACpB;EACA;EACA;EACA;EACA;;;ACRF;ELwBE;EACA;EACA,aKzBoB;EACpB,KJuBQ;EItBR;EACA;EACA;EACA,KJgBQ;;;AIZV;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAGF;EACE,WJbI;EIcJ,aJCO;EIAP,aJbM;EIcN;EACA;;AAGF;EACE;EACA;EACA;EACA,WJ5BM;EI6BN,aJjBM;;;AIsBV;EACE;EACA;;;AC5CF;EACE;EACA;;AAGA;EACE;EACA;;AAEA;EACI;EACA;EACA;EACA,aLUE;;AKRF;EACE;EACA;EACA;EACA,OLhBG;EKiBH,WLZA;EKaA,aLPA;EKQA;;AAGJ;AAAA;EAEE;EACA,OL9BO;EK+BP;EACA;EACA;;AAEA;AAAA;EACE;EACA,qBLpCO;EKqCP;;AAGF;AAAA;EACE;;AAIJ;EACE;;AAIJ;EACE;EACA;EACA;EACA;EACA,kBLvDW;EKwDX,OL1DO;EK2DP,WLhDI;EKiDJ,aL3CI;ED0CR;EACA;;AMGI;ENCJ%22,%22file%22:%22contact.css%22%7D */

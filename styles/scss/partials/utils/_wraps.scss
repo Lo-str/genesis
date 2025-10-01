@@ -3,7 +3,7 @@
 
 // Page wrapper
 .wrapper {
-  margin: 0 auto;
+  margin: v.$space-4 auto;
   padding: v.$space-4;
   @include m.flex-col(center);
   flex-wrap: wrap;
@@ -11,11 +11,4 @@
   width: 100%;
   min-height: 100vh;
   gap: 100px;
-
-  &__footer {
-      @include m.justify-between;
-      max-width: 1110px;
-      width: 100%;
-      height: auto;
-    }
 }

@@ -3,11 +3,6 @@
 @use "../partials/utils/header";
 @use "../partials/utils/footer";
 @use "../partials/utils/body";
+@use "../partials/utils/wraps";
 @use "../partials/contact/contact-main";
-
-.wrapper {
-  border: 2px solid red;
-  max-width: 1110px;
-  width: 100%;
-  min-height: 100vh;
-}
+@use "../partials/contact/contact-form";

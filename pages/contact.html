@@ -7,7 +7,7 @@
 
     <!-- Normalize and stylesheet links -->
     <link rel="stylesheet" href="../styles/css/pages/normalize.css">
-    <link rel="stylesheet" href="../styles/css/pages/projects.css">
+    <link rel="stylesheet" href="../styles/css/pages/contact.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,9 @@
 
             <!-- Logo -->
             <div class="logo">
-                <img class="logo__img" src="../images/index/Logo.png" alt="">
+                <a href="../index.html" title="home">
+                    <img class="logo__img" src="../images/index/Logo.png" alt="">
+                </a>
             </div>
 
             <!-- Navbar -->
@@ -39,27 +41,44 @@
             </nav>
         </header>
 
+        <!-- Main Container -->
         <main class="main-cnt">
+
+            <!-- Block One -->
             <section class="block-cnt1">
                 <article class="block-cnt1__a">
-                    <h1 class="block-cnt1__title">Full set of great
-                    features to make your product fresh</h1>
+                    <h1 class="block-cnt1__title">Full set of great<br>
+                    features to make your<br>
+                    product fresh</h1>
                     <p class="block-cnt1__txt">
                         Our favorite brands are our friends! We help them
                         to achieve their goals, they help us to stay sharp.
                     </p>
                 </article>
                 <article class="block-cnt1__b">
-                    <form class="block-cnt1__form">
-                        <label></label>
+                    <form class="form" action="#" method="post" novalidate>
+                        <div class="form__field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form__field">
+                            <label for="email">Email</label>
+                            <input type="text" id="mail" name="mail">
+                        </div>
+                        <div class="form__field">
+                            <label for="message">Message</label>
+                            <textarea type="text" id="msg" name="msg" rows="1" col="50"></textarea>
+                        </div>
+                        <button class="form__btn" type="submit">Submit</button>
                     </form>
-                    <button class="block-cnt1__btn">Submit</button>
                 </article>
             </section>
 
-            <section class="block-cnt2__map">
+            <!-- Block Two: Map -->
+            <section class="block-cnt2">
                 <img src="../images/contact/map.png">
             </section>
+
         </main>
 
         <!-- Footer -->
@@ -67,7 +86,9 @@
 
             <!-- Logo -->
             <div class="logo">
-                <img class="logo__img" src="../images/index/Logo.png" alt="">
+                <a href="../index.html" title="home">
+                    <img class="logo__img" src="../images/index/Logo.png" alt="">
+                </a>
             </div>
 
             <!-- Navbar -->

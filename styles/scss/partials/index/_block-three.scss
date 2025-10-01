@@ -1,17 +1,22 @@
 @use "../utils/variables" as v;
 @use "../utils/mixins" as m;
 
+// Block Three
 .block-three {
   max-width: 1110px;
   width: 100%;
-  height: auto;
+  min-height: 106px;
   display: grid;
   grid-template-columns: 2.5fr 1fr 1fr;
   grid-template-rows: 1fr;
   justify-items: end;
+  align-items: flex-start;
 
   a {
     @include m.links;
+    @include m.transition;
+
+    &:hover { @include m.hover; }
   }
 
   &__item1 {
@@ -21,12 +26,14 @@
 
   &__item2 {
     @include m.flex-col(start);
-    width: 155px;
+    width: 170px;
     height: auto;
+    padding: v.$space-2;
     grid-area: 1 / 2 / 2 / 3; }
 
   &__item3 {
     @include m.flex-col(start);
+    padding: v.$space-2;
     width: 150px;
     height: auto;
     grid-area: 1 / 3 / 2 / 4; }

@@ -1,0 +1,70 @@
+@use "../utils/mixins" as m;
+@use "../utils/variables" as v;
+
+// Wrapper form container
+.block-cnt1__b {
+  max-width: 475px;
+  width: 100%;
+
+  // Form container
+  .form {
+    display: grid;
+    row-gap: 30px;
+
+    &__field {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: v.$space-7;
+
+        label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: v.$overlay-60;
+          font-size: v.$fs-base;
+          font-weight: v.$fw-bold;
+          pointer-events: none;
+        }
+
+      input,
+      textarea {
+        font: inherit;
+        color: v.$text-primary;
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid v.$text-line;
+
+        &:focus {
+          outline: none;
+          border-bottom-color: v.$text-secondary;
+          border-bottom-width: 2px;
+        }
+
+        &::placeholder {
+          color: rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      textarea {
+        resize: vertical;
+      }
+    }
+
+    &__btn {
+      width: 125px;
+      height: 50px;
+      border: none;
+      border-radius: none;
+      background-color: v.$text-secondary;
+      color: v.$background;
+      font-size: v.$fs-base;
+      font-weight: v.$fw-bold;
+      @include m.transition;
+
+      &:hover {
+        @include m.hover;
+      }
+    }
+  }
+}

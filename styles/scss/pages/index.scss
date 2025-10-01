@@ -8,3 +8,15 @@
 @use "../partials/index/block-two";
 @use "../partials/index/block-three";
 @use "../partials/index/block-four";
+
+.wrapper__main {
+  max-width: 1110px;
+  width: 100%;
+  @include m.flex-col(center);
+  gap: v.$space-10;
+}
+
+.logo {
+  pointer-events: none;
+  cursor: default;
+}

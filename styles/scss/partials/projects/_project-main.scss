@@ -1,7 +1,7 @@
 @use "../utils/mixins" as m;
 @use "../utils/variables" as v;
 
-// Main
+// Project Main
 .main-pjct {
   display: grid;
   max-width: 1110px;
@@ -22,8 +22,8 @@
     justify-self: end;
     grid-area: item2;
   }
-  &__img1 {grid-area: img1;}
-  &__item3 {grid-area: item3;}
+  &__img1 { grid-area: img1; }
+  &__item3 { grid-area: item3; }
   &__img2 {
     align-self: end;
     grid-area: img2;
@@ -52,43 +52,38 @@
 }
 
 .block-pjct2 {
-  max-width: 335;
-  width: 100%;
-  min-height: 222px;
   display: grid;
-  grid-gap: 40px;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(7, 1fr);
-  grid-template-areas:
-    "item1 item2"
-    "item3 item4"
-    "item5 item6"
-    "item7 item8"
-    "item9 item10"
-    "item11 item12";
-
-  &__item1 {
-    margin: 0;
-    padding: 0;
-    grid-area: item1;
-  }
-  &__item2 {grid-area: item2;}
-  &__item3 {grid-area: item3;}
-  &__item4 {grid-area: item4;}
-  &__item5 {grid-area: item5;}
-  &__item6 {grid-area: item6;}
-  &__item7 {grid-area: item7;}
-  &__item8 {grid-area: item8;}
-  &__item9 {grid-area: item9;}
-  &__item10 {grid-area: item10;}
-  &__item11 {grid-area: item11;}
-  &__item12 {grid-area: item12;}
-}
-
-.item1, .item3, .item5, .item7, .item9 {
+  row-gap: v.$space-3;
+  column-gap: v.$space-9;
+  max-width: 335px;
+  width: 100%;
+  min-height: 343px;
   font-weight: v.$fw-bold;
   font-size: v.$fs-medium;
-  color: v.$overlay-50;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    border-bottom: 1px solid v.$text-line;
+  }
+
+  &__item1,
+  &__item3,
+  &__item5,
+  &__item7,
+  &__item9,
+  &__item11 {
+    color: v.$overlay-50;
+  }
+
+  &__item2,
+  &__item4,
+  &__item6,
+  &__item8,
+  &__item10,
+  &__item12 {
+    text-align: left;
+  }
 }
 
 .block-pjct3 {

@@ -1,12 +1,13 @@
 @use "../utils/mixins" as m;
 @use "../utils/variables" as v;
 
-
+// Block One
 .block-one {
   @include m.justify-start;
   max-width: 1110px;
   width: 100%;
   height: auto;
+
     &__a {
       max-width: 635px;
       width: 100%;
@@ -15,10 +16,12 @@
       &--txt {
         margin-bottom: v.$space-4;
         font-size: v.$fs-large;
-  }
+      }
+
       &--blue {
         color: v.$text-secondary;
       }
+
       &--title {
         line-height: v.$space-6;
         font-size: v.$fs-xl

@@ -1,0 +1,61 @@
+.block-cnt1__b {
+  max-width: 475px;
+  width: 100%;
+}
+.block-cnt1__b .form {
+  display: grid;
+  row-gap: 30px;
+}
+.block-cnt1__b .form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.75rem;
+}
+.block-cnt1__b .form__field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 700;
+  pointer-events: none;
+}
+.block-cnt1__b .form__field input,
+.block-cnt1__b .form__field textarea {
+  font: inherit;
+  color: #111111;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #D8D8D8;
+}
+.block-cnt1__b .form__field input:focus,
+.block-cnt1__b .form__field textarea:focus {
+  outline: none;
+  border-bottom-color: #4A4FF2;
+  border-bottom-width: 2px;
+}
+.block-cnt1__b .form__field input::placeholder,
+.block-cnt1__b .form__field textarea::placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+.block-cnt1__b .form__field textarea {
+  resize: vertical;
+}
+.block-cnt1__b .form__btn {
+  width: 125px;
+  height: 50px;
+  border: none;
+  border-radius: none;
+  background-color: #4A4FF2;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2;
+}
+.block-cnt1__b .form__btn:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../../scss/partials/contact/contact-form.scss%22,%22../../../scss/partials/utils/_variables.scss%22,%22../../../scss/partials/utils/_mixins.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;EACE;EACA;;AAGA;EACE;EACA;;AAEA;EACI;EACA;EACA;EACA,aCUE;;ADRF;EACE;EACA;EACA;EACA,OChBG;EDiBH,WCZA;EDaA,aCPA;EDQA;;AAGJ;AAAA;EAEE;EACA,OC9BO;ED+BP;EACA;EACA;;AAEA;AAAA;EACE;EACA,qBCpCO;EDqCP;;AAGF;AAAA;EACE;;AAIJ;EACE;;AAIJ;EACE;EACA;EACA;EACA;EACA,kBCvDW;EDwDX,OC1DO;ED2DP,WChDI;EDiDJ,aC3CI;EC0CR;EACA;;AFGI;EECJ%22,%22file%22:%22contact-form.css%22%7D */
